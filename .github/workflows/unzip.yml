@@ -1,0 +1,38 @@
+name: Extract Files
+
+on:
+  push:
+    paths:
+      - '*.zip'
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Find and extract zip file
+        run: |
+          for zipfile in *.zip; do
+            if [ -f "$zipfile" ]; then
+              # استخراج فایل‌ها
+              unzip -o "$zipfile" -d temp_extract/
+              
+              # کپی کردن فایل‌ها به جای درست
+              cp -r temp_extract/sql/ ./sql/ 2>/dev/null || true
+              cp -r temp_extract/data/ ./data/ 2>/dev/null || true
+              cp -r temp_extract/dashboard/ ./dashboard/ 2>/dev/null || true
+              
+              # پاک کردن فایل زیپ
+              rm "$zipfile"
+              rm -rf temp_extract/
+              break
+            fi
+          done
+          
+      - name: Commit extracted files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Auto-extract zip file"
+          file_pattern: "sql/** data/** dashboard/**"
