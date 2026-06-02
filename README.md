@@ -7,6 +7,20 @@ This project analyzes six months of real transactional data from a retail busine
 - **DeepSeek AI integration** for automated business insights (Pareto analysis, day-of-week patterns, customer concentration)
 - Raw Excel data (your row count here rows)
 
+## Key Metrics Discovered
+
+| Metric | Value |
+|--------|-------|
+| Total Revenue | 165bn R |
+| Total Invoices | 484 |
+| Unique Customers | 116 |
+| Unique Products | 685 |
+| Top Customer Share (customer 31) | 22.79% |
+| Top 3 Customer Share | 43.36% |
+| Pareto (20% customers) | 84.33% of revenue |
+| Best Day (Thursday) | 19.63% of revenue |
+| Weakest Day (Friday) | 9.57% of revenue |
+
 ## Folder Structure
 Sales_Dashboard_Project/
 ├── data/raw/
@@ -38,7 +52,7 @@ Using DeepSeek LLM, I generated automated business insights from the SQL analysi
 
 **AI Recommendations:**
 - Create loyalty program for top 20% customers (avg 10.3 invoices each, 207 units per purchase)
-- Investigate Thursday's weak performance (50% lower than Friday)
+- Investigate Friday's weak performance (50% lower than Thursday)
 - Develop customer acquisition strategy to reduce dependency on top 3 customers
 
 *Full AI output available in [`/ai_insights/AI_insights.md`](./ai_insights/AI_insights.md)*
