@@ -5,7 +5,7 @@ This project analyzes six months of real transactional data from a retail busine
 - PostgreSQL database (`invoices_data` table) with data cleaning, KPIs, customer analysis, and RFM segmentation
 - Interactive Power BI dashboard (2 pages, dynamic filtering)
 - **DeepSeek AI integration** for automated business insights (Pareto analysis, day-of-week patterns, customer concentration)
-- Raw Excel data (your row count here rows)
+- Raw Excel data (4089 rows)
 
 ## Key Metrics Discovered
 
