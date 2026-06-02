@@ -11,7 +11,7 @@ This project analyzes six months of real transactional data from a retail busine
 
 | Metric | Value |
 |--------|-------|
-| Total Revenue | 165bn R |
+| Total Revenue | 165,000,000,000 IRR |
 | Total Invoices | 484 |
 | Unique Customers | 116 |
 | Unique Products | 685 |
@@ -46,7 +46,7 @@ Using DeepSeek LLM, I generated automated business insights from the SQL analysi
 **Key AI-Generated Findings:**
 - **Pareto Principle:** 20% of customers generate 84.33% of total revenue (24 customers out of 120)
 - **Customer concentration risk:** Top 3 customers (31, 58, 13) account for 43.36% of revenue
-- **Day-of-week pattern:** Friday generates 19.63% of revenue (2x Thursday's 9.57%)
+- **Day-of-week pattern:** Thursday generates 19.63% of revenue (2x Friday's 9.57%)
 - **Top customer behavior:** Customer 31 alone represents 22.79% of total revenue
 - **Product concentration:** Top product represents 18.75% of total revenue
 
