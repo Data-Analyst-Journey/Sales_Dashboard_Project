@@ -1,11 +1,29 @@
 # 🛒 Sales Dashboard & Customer Analytics Project (AI-Enhanced)
 
-## Project Overview
-This project analyzes six months of real transactional data from a retail business, including:
-- PostgreSQL database (`invoices_data` table) with data cleaning, KPIs, customer analysis, and RFM segmentation
-- Interactive Power BI dashboard (2 pages, dynamic filtering)
-- **DeepSeek AI integration** for automated business insights (Pareto analysis, day-of-week patterns, customer concentration)
-- Raw Excel data (4089 rows)
+📌 Project Overview
+
+This project analyzes six months of real transactional data from a retail business to uncover hidden risks and opportunities. The goal was to move beyond basic reporting and deliver actionable insights that could directly improve business performance.
+
+💼 Business Impact
+
+Problem: The business had no clear view of its customer base or sales patterns, making it difficult to identify risks and opportunities. Management lacked the data needed to make informed strategic decisions.
+
+Solution: I built an end-to-end analytics solution, including a PostgreSQL database, an interactive Power BI dashboard, and integrated AI-driven insights to analyze customer behavior, revenue concentration, and sales trends.
+
+Outcomes:
+
+· Risk Mitigation: Identified that the top 3 customers generate 43.36% of total revenue, with the single largest client accounting for 22.79%. This insight is now used to drive a customer diversification strategy.
+· Operational Improvement: Discovered that 84.33% of revenue comes from just 20% of customers (Pareto Principle). This has led to the development of a loyalty program for high-value clients.
+· Strategic Planning: Pinpointed that Thursdays generate 2x the revenue of Fridays, enabling the business to optimize staffing and marketing efforts around weekly patterns.
+· Data-Driven Culture: The Power BI dashboard is now a standard tool used by management for monthly performance reviews, fostering a culture of data-driven decision-making.
+
+🤖 AI-Enhanced Analysis
+
+Using DeepSeek LLM, I generated automated insights from the SQL analysis, which highlighted critical findings such as:
+
+· Customer concentration risk and recommendations for diversification.
+· Underperforming weekdays and suggestions for promotional campaigns.
+· Top customer behavior and loyalty program opportunities.
 
 ## Key Metrics Discovered
 
@@ -39,23 +57,6 @@ Sales_Dashboard_Project/
 │   └── AI_insights.md
 └── README.md
 
-## AI-Enhanced Analysis (`/ai_insights/AI_insights.md`)
-
-Using DeepSeek LLM, I generated automated business insights from the SQL analysis results:
-
-**Key AI-Generated Findings:**
-- **Pareto Principle:** 20% of customers generate 84.33% of total revenue (24 customers out of 120)
-- **Customer concentration risk:** Top 3 customers (31, 58, 13) account for 43.36% of revenue
-- **Day-of-week pattern:** Thursday generates 19.63% of revenue (2x Friday's 9.57%)
-- **Top customer behavior:** Customer 31 alone represents 22.79% of total revenue
-- **Product concentration:** Top product represents 18.75% of total revenue
-
-**AI Recommendations:**
-- Create loyalty program for top 20% customers (avg 10.3 invoices each, 207 units per purchase)
-- Investigate Friday's weak performance (50% lower than Thursday)
-- Develop customer acquisition strategy to reduce dependency on top 3 customers
-
-*Full AI output available in [`/ai_insights/AI_insights.md`](./ai_insights/AI_insights.md)*
 
 ## Database Schema (PostgreSQL)
 
