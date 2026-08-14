@@ -41,6 +41,26 @@ Using DeepSeek LLM, I generated automated insights from the SQL analysis, which 
 
 ## Folder Structure
 
+ecommerce_analytics/
+├── data/
+│ ├── raw/ ← Raw data (not uploaded to GitHub)
+│ └── cleaned/ ← Cleaned data
+├── python/
+│ ├── ecommerce_etl_oop.ipynb ← Data cleaning pipeline
+│ ├── ecommerce_analysis.ipynb ← RFM, Cohort, Pareto analysis
+│ └── cleaning_history.json
+├── powerbi/
+│ ├── ecommerce_dashboard.pbix ← Power BI file
+│ ├── ecommerce_dashboard.pdf ← PDF export
+│ └── dashboard_preview/ ← Dashboard screenshots
+├── reports/
+│ └── quality_report.json
+├── README.md
+└── requirements.txt
+
+
+
+
 
 Sales_Dashboard_Project/
 ├── data/raw/
