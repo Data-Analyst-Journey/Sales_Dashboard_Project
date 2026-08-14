@@ -1,4 +1,6 @@
-# 🛒 Sales Dashboard & Customer Analytics Project (AI-Enhanced)
+
+```
+#🛒 Sales Dashboard & Customer Analytics Project (AI-Enhanced)
 
 ## 📌 Project Overview
 
