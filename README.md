@@ -40,6 +40,8 @@ Using DeepSeek LLM, I generated automated insights from the SQL analysis, which 
 | Weakest Day (Friday) | 9.57% of revenue |
 
 ## Folder Structure
+
+
 Sales_Dashboard_Project/
 ├── data/raw/
 │   ├── sales_data.csv
@@ -56,6 +58,8 @@ Sales_Dashboard_Project/
 ├── ai_insights/
 │   └── AI_insights.md
 └── README.md
+
+
 
 
 ## Database Schema (PostgreSQL)
