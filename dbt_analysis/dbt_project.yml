@@ -1,0 +1,45 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'sales_dashboard'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'sales_dashboard'
+
+# These configurations specify where dbt should look for different types of files.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Configuring models
+models:
+  sales_dashboard:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table    
+
+ 
+seeds:
+  sales_dashboard: 
+    sales_data_cleaned: 
+      +schema: dbt_sales 
+      +column_types: 
+        invoice_id: TEXT
+        customer_code: TEXT
+        product_code: TEXT
+        quantity: FLOAT
+        unit_price: DECIMAL(12,2)
+        revenue: DECIMAL(12,2)
+        invoice_date: TEXT
+        date: DATE
+        weekday: TEXT
+        weekday_num: INT 
+         
