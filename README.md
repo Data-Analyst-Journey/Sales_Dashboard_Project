@@ -186,7 +186,7 @@ Churn prediction model identifies at-risk customers. Implement a loyalty program
 
 📫 Connect with Me
 
-· LinkedIn: linkedin.com/in/samaneh-kavianfar
+· LinkedIn: https://www.linkedin.com/in/samaneh-kavianfar-8a93033b2/
 · GitHub: github.com/Data-Analyst-Journey
 
 ---
